@@ -18,3 +18,7 @@ fields:
   name: categories
   label: categories
   description: topic
+- type: text
+  name: subtitle
+  label: subtitle
+  description: description of the blog post
