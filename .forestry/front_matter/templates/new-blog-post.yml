@@ -6,3 +6,11 @@ fields:
   label: layout
   default: blog
   hidden: true
+- type: text
+  name: title
+  label: title
+  description: title of blog goes here
+- type: datetime
+  label: date
+  name: date
+  hidden: true
