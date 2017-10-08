@@ -1,6 +1,6 @@
 ---
 pages:
-- _posts/blog/test.md
+- _posts/blog/2017-10-08-test.md
 hide_body: false
 fields:
 - type: text
