@@ -6,8 +6,35 @@ fields:
   label: layout
   default: post
   hidden: true
+- type: text
+  name: title
+  label: title
+  description: name of food goes here
+  config:
+    required: true
 - type: datetime
   name: date
   label: date
+  description: date
+  hidden: true
+- type: text
+  name: categories
+  label: categories
+  description: food
+  hidden: true
+  default: food
+- type: text
+  name: subtitle
+  label: subtitle
+  description: a small description of the food
   config:
     required: true
+- type: text
+  name: author
+  label: author
+  description: your name goes here
+  config:
+    required: true
+- type: file
+  name: header-img
+  label: image as a thumbnail for the food
