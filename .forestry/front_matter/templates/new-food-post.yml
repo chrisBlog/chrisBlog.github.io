@@ -6,9 +6,8 @@ fields:
   label: layout
   default: post
   hidden: true
-- type: text
-  label: title
-  name: title
-  description: name of food goes here
+- type: datetime
+  name: date
+  label: date
   config:
     required: true
