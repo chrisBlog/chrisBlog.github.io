@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<h1>some of my favorite food</h1>
+
+<div class="food-blog">
+  {% for post in site.posts %}
+    {% if post.categories contains "food" %}
+    <div class="post">
+      <a href="{{ post.url }}">
+        <img src="{{ post.header-img }}" alt="">
+        <h1 class="post-title">
+          {{ post.title }}
+        </h1>
+        <h3>
+          {% if post.subtitle %}
+            {{ post.subtitle }}
+          {% endif %}
+        </h3>
+      </a>
+      <p>Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>

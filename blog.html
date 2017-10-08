@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1>my blog post</h1>
+
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.categories contains "blog" %}
+    <div class="post">
+      <a href="{{ post.url }}">
+        <h1 class="post-title">
+          {{ post.title }}
+        </h1>
+        <h3>
+          {% if post.subtitle %}
+            {{ post.subtitle }}
+          {% endif %}
+        </h3>
+      </a>
+      <p>Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
