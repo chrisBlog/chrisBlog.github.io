@@ -7,10 +7,10 @@ layout: default
 <div class="food-blog">
   {% for post in site.posts %}
     {% if post.categories contains "food" %}
-    <div class="post">
+    <div class="food-post">
       <a href="{{ post.url }}">
         <img src="{{ post.header-img }}" alt="">
-        <h1 class="post-title">
+        <h1 class="food-title">
           {{ post.title }}
         </h1>
         <h3>
