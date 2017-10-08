@@ -6,3 +6,9 @@ fields:
   label: layout
   default: post
   hidden: true
+- type: text
+  label: title
+  name: title
+  description: name of food goes here
+  config:
+    required: true
