@@ -26,3 +26,7 @@ fields:
   name: author
   label: author
   description: author of article
+- type: file
+  name: header-img
+  label: image on top of the post
+  description: image that appears in top of the post
