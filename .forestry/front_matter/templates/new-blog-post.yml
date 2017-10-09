@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/blog/html-is-cool.md
 - _posts/blog/2017-10-08-test.md
 hide_body: false
 fields:
