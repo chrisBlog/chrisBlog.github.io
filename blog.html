@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<h1>my blog post</h1>
+
+<header>
+  <h1 class="blog-head">my blog post</h1>
+  {% include home.html %}
+</header>
 
 <div class="posts">
   {% for post in site.posts %}

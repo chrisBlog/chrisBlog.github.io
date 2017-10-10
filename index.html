@@ -2,6 +2,54 @@
 layout: default
 ---
 
-<h1>{{ site.title }}</h1>
+<section class="home">
+  <section class="home-container">
+    <section>
+      <h1>{{ site.title }}</h1>
 
-<p>a really cool developer</p>
+      <p>a really cool developer</p>
+    </section>
+    <section>
+      <h2>About</h2>
+      <p>Hi i am chris and i like to work with the web</p>
+    </section>
+    <section>
+      <h2>Blog</h2>
+      <p>here are some of my blog post</p>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.categories contains "blog" %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> {{post.subtitle}}</li>
+          {% endif %}
+        {% endfor %}
+        <li><a href="../../../../{{site.baseurl}}blog.html">see all here</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Coding</h2>
+      <p>you can find my work on github</p>
+      <p><a href="https://github.com/codechristian">codechristian</a></p>
+      <p>Portfolio website</p>
+      <p><a href="http://christianprado.com/">chris</a></p>
+    </section>
+    <section>
+      <h2>Food Blog</h2>
+      <p>I liked to talk about food!</p>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.categories contains "food" %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> {{post.subtitle}}</li>
+          {% endif %}
+        {% endfor %}
+        <li><a href="../../../../{{site.baseurl}}food.html">see all here</a></li>
+      </ul>
+    </section>
+    <footer>
+      <h2>Contact</h2>
+      <ul>
+        <li>Github: <a href="https://github.com/codechristian">chris </a></li>
+        <li>Email: christianr@ymail.com</li>
+      </ul>
+    </footer>
+  </section>
+</section>

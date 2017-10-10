@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<h1>some of my favorite food</h1>
+<header>
+  <h1 class="food-head">some of my favorite food</h1>
+  {% include home.html %}
+</header>
 
 <div class="food-blog">
   {% for post in site.posts %}
